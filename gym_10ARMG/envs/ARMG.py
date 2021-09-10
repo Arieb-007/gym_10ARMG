@@ -3,7 +3,7 @@ import numpy as np
 from gym.utils import seeding
 import gym
 
-class Ten_ARMG:
+class Ten_ARMG(gym.Env):
     
     def __init__(self,sigma,bandits):
         self.sigma = sigma               #standard deviation
