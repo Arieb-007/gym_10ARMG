@@ -8,7 +8,6 @@ class Ten_ARMG:
     def __init__(self,sigma,bandits):
         self.sigma = sigma               #standard deviation
         self.bandits = bandits
-        self.action_space = np.arange(10)
         
     
     def prob_dist(self,no_samples_per_arm,bandit):
@@ -23,7 +22,12 @@ class Ten_ARMG:
         rew_dist = []
         np.random.seed(seed)
         return np.random.normal(q_mean,self.sigma)
+
+    def step(self,action):
+      return np.random.normal(r_dist[action],self.sigma)
         
+            
             
     def seed(self,seed):
         np.random.seed(seed)
+        
