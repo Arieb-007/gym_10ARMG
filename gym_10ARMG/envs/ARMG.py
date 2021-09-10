@@ -8,6 +8,7 @@ class Ten_ARMG:
     def __init__(self,sigma,bandits):
         self.sigma = sigma               #standard deviation
         self.bandits = bandits
+        self.action_space = np.arange(bandits)
         
     
     def prob_dist(self,no_samples_per_arm,bandit):
