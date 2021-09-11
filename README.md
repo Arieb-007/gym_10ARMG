@@ -13,12 +13,12 @@ gym_10ARMG/
     __init__.py
     envs/
       __init__.py
-      Ten_ARMG.py
+      ARMG.py
       
 ```
 
 ```
-from gym_10ARMG import Ten_ARMG
+from gym_10ARMG.ARMG import Ten_ARMG
 import numpy as np
 import matplotlib.pyplot as plt
 episodes = 1000
