@@ -4,6 +4,19 @@ In OpenAI Gym create the environment for 10-armed Gaussian Bandit. Make sure it 
 as expected by creating certain test cases, e.g., by playing with σ. Report about your test cases and how
 they point towards the correct implementation. You can also report about your general observations.
 
+
+```
+gym_10ARMG/
+  README.md
+  setup.py
+  gym_10ARMG/
+    __init__.py
+    envs/
+      __init__.py
+      Ten_ARMG.py
+      
+```
+
 ```
 from gym_10ARMG import Ten_ARMG
 import numpy as np
